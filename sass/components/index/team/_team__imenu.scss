@@ -1,0 +1,44 @@
+.team__imenu {
+    justify-content: center;
+    display: flex;
+
+    padding-bottom: 30px;
+    margin-top: 16px;
+
+}
+
+.team__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--normal-color);
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+
+    transition: background-color var(--time-duration);
+
+    &:hover, &:focus {
+        background: var(--accent-color);
+    }
+
+    &:last-child{
+        margin-right: 0px;
+    }
+}
+
+.team__link {
+    width: 20px;
+    height: 20px;
+
+}
+
+.team__svg {
+    fill: #AFB1B8;
+    transition: fill var(--time-duration);
+
+    .team__link:hover &, .team__link:focus & {
+        fill: var(--normal-color);
+    }
+}

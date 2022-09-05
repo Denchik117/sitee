@@ -1,0 +1,21 @@
+.modal__button {
+    position: absolute;
+    display: flex;
+    outline: none;
+    width: 30px;
+    height: 30px;
+    right: 10px;
+    top: 10px;
+    align-items: center;
+    justify-content: center;
+    background: var(--normal-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
+
+.modal__close {
+    transition: fill var(--time-duration);
+    &:hover, &:focus {
+        fill: var(--accent-color);
+    }
+}
